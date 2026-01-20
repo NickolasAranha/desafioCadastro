@@ -31,7 +31,7 @@ public class Pet {
 
     public void setAddress(String rua, String cidade, String numero) {
         if (numero != null) {
-            this.address = rua + numero + ", " + cidade;
+            this.address = rua + ", " + numero + ", " + cidade;
         } else {
             this.address = rua + " Não Informado, " + cidade;
         }

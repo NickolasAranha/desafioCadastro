@@ -48,7 +48,6 @@ public class CadastrarPet {
             System.out.print("Rua: ");
             String road = sc.nextLine();
             pet.setAddress(road, city, numberHouse);
-            System.out.println(pet.getAddress());
 
 
             System.out.print(perguntas.get(4) + " ");
@@ -62,12 +61,14 @@ public class CadastrarPet {
             if(!weight.isBlank()) {
                 pet.setWeight(Double.valueOf(weight));
             }
-            System.out.println(perguntas.get(6) + " ");
+            System.out.print(perguntas.get(6) + " ");
             String race = sc.nextLine();
 
             if (race != null) {
                 pet.setRace(race);
             }
+
+            SalvarPet.salvarPet(pet);
         } catch (IOException | PetException | NumberFormatException e) {
             System.out.println("Erro: " + e.getMessage());
         }
