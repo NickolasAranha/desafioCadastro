@@ -10,7 +10,7 @@ public class SalvarPet {
     public static void salvarPet(Pet pet) throws IOException {
         LocalDateTime d = LocalDateTime.now();
         String path = String.valueOf(+ d.getYear() + d.getMonthValue() + d.getDayOfMonth() + "T" + d.getHour() + d.getMinute()
-                + pet.getName().repl aceAll(" ", "").toUpperCase() + ".txt");
+                + pet.getName().replaceAll(" ", "").toUpperCase() + ".txt");
         Path pathArquivo = Paths.get("petsCadastrados", path);
         Files.createDirectories(pathArquivo.getParent());
 
