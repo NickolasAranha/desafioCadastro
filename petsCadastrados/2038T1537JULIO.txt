@@ -1,0 +1,7 @@
+1 - Julio
+2 - Gato
+3 - Femea
+4 - Rua, 234, Cipava
+5 - 12 anos
+6 - 15.0 kg
+7 - Dublo
